@@ -1,0 +1,15 @@
+CREATE database onkar;
+use onkar;
+alter table mydata drop column name;
+drop table mydata;
+create table mydata (first_name varchar(20), Last_name varchar(20), phoneno int);
+show tables;
+select * from mydata;
+alter table mydata add (Country varchar(20));
+show tables;
+select * from mydata;
+insert into mydata values ("Onkar", "Rainak", 9860582757, "india");
+insert into mydata values ("Omu", "Rainak", 9404732100, "india");
+alter table mydata modify column phoneno double;
+delete from mydata where first_name= 'onkar';
+select * from mydata;
