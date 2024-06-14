@@ -43,4 +43,7 @@ update OLYMPICS_HISTORY set medal = NULL where medal = 'NA';
 -- select count(*) from OLYMPICS_HISTORY where medal = 'NULL';
 
 update OLYMPICS_HISTORY set weight = NUll where weight = 'NA';
-select count(*) from OLYMPICS_HISTORY where weight = 'NULL';
+
+select count(*) from OLYMPICS_HISTORY where weight is NULL;
+select count(*) from OLYMPICS_HISTORY where medal is NULL;
+
